@@ -63,7 +63,7 @@ nav {
   /*header end*/
 
 
-  /*hero*/
+  /*hero banner*/
 
 
   .mainbanner{
@@ -149,6 +149,8 @@ background: #4EC5F7;
 
 
 /*funny vedio*/
+
+
 .funny-vedio{
   text-align: center;
   padding: 100px 240px ;
@@ -185,15 +187,27 @@ background-clip: text;
   
 
 }
+
+
+
+
+
+
 .card img:hover{
-  border: 5px solid #F948B2;
-  border-radius: 1rem;
-  transition: .5s;
-  transform: none;
-  opacity:60%;
-  
+  border: 5px solid #ff42a5;
+  border-radius: 25px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../images/Rectangle\ 6.png'), lightgray 50% / cover no-repeat;
+  opacity: 60%;
 
 }
+
+
+.card img:hover .hovercont{
+  
+  display: block;
+}
+
+
 
 .card img{
   max-width: 320px;
@@ -205,6 +219,46 @@ background-clip: text;
   font-weight: 500;
 
 }
+
+
+
+
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.watchnow{
+
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.image-container:hover .image-button {
+  opacity: 2;
+}
+.image-container:hover .watchnow {
+  opacity: 2;
+}
+
 
 
 
