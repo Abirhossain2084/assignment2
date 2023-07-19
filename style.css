@@ -1,0 +1,538 @@
+*{
+
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+
+header{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 50px 240px;
+
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.game{
+    color:#FF42A5 ;
+}
+.follow-us{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    width: 230px;
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav {
+    margin-left: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /*header end*/
+
+
+  /*hero*/
+
+
+  .mainbanner{
+      display: flex;
+      justify-content: space-between;
+  }
+  .banner{
+    background-image: url(images/Group\ 14.png);
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .baner-con{
+
+    margin-left: 240px;
+    padding-top: 200px;
+  }
+  .banner-image{
+    
+    margin-right: 240px;
+    overflow: visible;
+  }
+ 
+
+  
+ /*gamer-sec*/
+
+
+/*funny vedio*/
+.funny-vedio{
+  text-align: center;
+  padding: 100px 240px ;
+}
+.funny-vedio h1{
+  font-size: 3rem;
+  font-weight: 700px;
+  color: #0B0223;
+  
+}
+.funny-vedio span{
+  font-size: 3rem;
+  font-weight: 700px;
+  color:#F948B2;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  
+}
+.funny-vedio p{
+  font-size: .8rem;
+  font-weight: 700px;
+  color: #534C64;
+  
+}
+
+
+/*card*/
+.funny-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.card img:hover{
+  border: 5px solid #F948B2;
+  border-radius: 1rem;
+  transition: .5s;
+  transform: none;
+  opacity:60%;
+  
+
+}
+
+.card img{
+  max-width: 320px;
+
+}
+.card p{
+  color: #534C64;
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+
+/*buttons*/
+.buttons{
+  text-align: center;
+  padding: 100px 240px ;
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+
+.image-button {
+  display: inline-flex;
+  
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background-color:#FFF;
+  border-radius: 50px;
+  align-items: center;
+  font-size: 1.2rem;
+  color:#0B0223;
+  font-weight: 600;
+  
+
+  
+}
+
+.image-button img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+button{
+  max-width: 240px;
+}
+button:hover{
+
+  border: 2px solid #FF42A5 ;
+  color: #F948B2;
+  
+  transition:0.25s;
+  
+}
+
+/*Footer*/
+
+footer{
+  background-color: #0B0223;
+  color: #FFF;
+  display: block;
+  text-align: center;
+  align-items: center;
+  padding: 100px 0px;
+
+}
+.footer-list ul{
+  
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+.footer-list ul li a{
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 600;
+}
+.footer-list, .footer-list2 ul li a{
+  text-decoration: none;
+  color:#757575;
+  font-weight: 600;
+}
+.footer-list2 ul{
+  
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+.flogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*playgames*/
+
+
+
+
+
+
+/*responsve mobile*/
+
+
+@media screen and (max-width: 767px) {
+
+    header{
+        padding: 50px 150px;  
+        flex-direction: column;  
+     }
+     nav {
+        margin-left:0;
+     }
+       
+      nav ul {
+        flex-direction: column;
+      }
+
+      .hero{
+
+        padding: 50px 150px;  
+        flex-direction: column-reverse;
+    
+      }
+      
+      /*funnyresponsve*/
+
+     .funny-vedio{
+        text-align: center;
+        padding: 80px 0px ;
+      }
+
+      .funny-vedio h1{
+        font-size: 1.2rem;
+        font-weight: 700px;
+        color: #0B0223;
+        
+      }
+      .funny-vedio span{
+        font-size: 1.2rem;
+        font-weight: 700px;
+        color:#F948B2;
+      }
+      
+      .funny-card{
+        flex-direction: column;
+      
+      }
+
+      .card img{
+        max-width: 200px;
+      }
+
+      .buttons{
+        text-align: center;
+        padding: 100px 0px ;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       
+      }
+      .image-button{
+        font-size: 0.6rem;
+      }
+      .image-button img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        margin-right: 5px;
+      }
+
+/*footer*/
+
+      .footer-list ul{
+  
+        list-style: none;
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        padding-right: 20px;
+      }
+      .footer-list2 ul{
+  
+        list-style: none;
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        padding-right: 25px;
+      }
+
+      .mainbanner{
+        flex-direction: column-reverse;
+        
+    }
+
+    .banner-image img{
+     
+      max-width:250px;
+      padding-left: 30px;
+      
+    }
+    .banner{
+      background-image: url(images/Group\ 14.png);
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+    }
+    .baner-con{
+  
+      margin: 20px 0px;
+      padding: 0px;
+      text-align: center;
+    }
+    .banner-image{
+  
+      margin-right: 240px;
+    }
+      
+      
+
+         
+}
+
+/*responsve Tab*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  
+    header{
+        padding: 50px 100px;  
+        flex-direction: column;  
+     }
+     nav {
+        margin-left: 0px;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+    
+    
+    .funny-vedio{
+      text-align: center;
+      padding: 80px 0px ;
+    }
+
+    .card img{
+      max-width: 150px;
+    }
+
+    .buttons{
+      text-align: center;
+      padding: 100px 50px ;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+     
+    }
+
+
+    .mainbanner{
+      flex-direction: column-reverse;
+      
+  }
+
+
+    .banner-image img{
+     
+      max-width:450px;
+      padding-left: 200px;
+      
+    }
+    .banner{
+      background-image: url(images/Group\ 14.png);
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+    }
+    .baner-con{
+  
+      margin: 20px 0px;
+      padding: 0px;
+      text-align: center;
+    }
+   
+      
+
+
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1440px){
+
+  header{
+    padding: 50 100px;  
+    flex-direction: column;  
+ }
+ nav {
+    margin-left: 0px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+
+.funny-vedio{
+  text-align: center;
+  padding: 80px 60px ;
+}
+
+.card img{
+  max-width: 210px;
+}
+
+.buttons{
+  text-align: center;
+  padding: 100px 50px ;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+ 
+}
+
+
+.mainbanner{
+  flex-direction: column-reverse;
+  
+}
+
+
+.banner-image img{
+ 
+  max-width:650px;
+  padding-left: 200px;
+  
+}
+.banner{
+  background-image: url(images/Group\ 14.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.baner-con{
+
+  margin: 20px 0px;
+  padding: 0px;
+  text-align: center;
+}
+  
+}
+
+
+/* low device*/
+
+@media screen and (min-width: 375px) and (max-width: 766px){
+
+
+  .mainbanner{
+    flex-direction: column-reverse;
+    
+}
+
+.banner-image img{
+ 
+  max-width:250px;
+  padding-left: 75px;
+  
+}
+.banner{
+  background-image: url(images/Group\ 14.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.baner-con{
+
+  margin: 20px 0px;
+  padding: 0px;
+  text-align: center;
+}
+.banner-image{
+
+  margin-right: 240px;
+}
+
+
+}
