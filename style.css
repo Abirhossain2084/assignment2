@@ -343,13 +343,20 @@ background-clip: text;
 
 /*buttons*/
 .buttons{
-  text-align: center;
-  padding: 100px 240px ;
+ 
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+ 
+
+}
+
+.packetbutton{
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  padding: 50px 370px;
+
 }
 
 
@@ -503,7 +510,7 @@ footer{
         max-width: 200px;
       }
 
-      .buttons{
+      .packetbutton{
         text-align: center;
         padding: 100px 0px ;
         display: grid;
@@ -708,7 +715,7 @@ footer{
       max-width: 150px;
     }
 
-    .buttons{
+    .packetbutton{
       text-align: center;
       padding: 100px 50px ;
       display: grid;
@@ -871,13 +878,16 @@ footer{
   max-width: 210px;
 }
 
-.buttons{
-  text-align: center;
-  padding: 100px 50px ;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
- 
+.packetbutton{
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 50px;
+
 }
+
 
 
 .mainbanner{
