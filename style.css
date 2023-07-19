@@ -97,25 +97,37 @@ nav {
   font-weight: 600;
   font-size: 1rem;
   display: inline-flex;
-padding: 21px 40px;
-align-items: flex-start;
-gap: 10px;
-border-radius: 48px;
-border: 0;
-background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
- }
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  border: 0;
+  background-color: #F948B2;
+}
+
+.signin:hover{
+  color: white;
+
+}
+
+
  .gorough{
   color: #FFF;
   font-weight: 600;
   font-size: 1rem;
   display: inline-flex;
-padding: 21px 40px;
-align-items: flex-start;
-gap: 10px;
-border-radius: 48px;
-border: 0;
-background: #4EC5F7;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  border: 0;
+  background-color:#4EC5F7;
  }
+
+ .gorough:hover{
+  color: white;
+ }
+
 
   .baner-con h1{
     font-size: 5rem;
@@ -202,10 +214,6 @@ background-clip: text;
 }
 
 
-.card img:hover .hovercont{
-  
-  display: block;
-}
 
 
 
@@ -222,21 +230,25 @@ background-clip: text;
 
 
 
-
-
-
-.image-container {
+.himage-container {
   position: relative;
   display: inline-block;
 }
 
-.image-button {
+.himage-button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.himage-container:hover .himage-button {
+  opacity: 1;
+}
+.himage-container:hover .watchnow {
+  opacity: 2;
 }
 
 .watchnow{
@@ -247,18 +259,10 @@ background-clip: text;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
-  color: #FFF;
-  font-weight: 600;
-  font-size: 1rem;
+  color:#FF42A5;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
-
-.image-container:hover .image-button {
-  opacity: 2;
-}
-.image-container:hover .watchnow {
-  opacity: 2;
-}
-
 
 
 
