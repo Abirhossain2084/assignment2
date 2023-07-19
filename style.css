@@ -73,8 +73,65 @@ nav {
   .banner{
     background-image: url(images/Group\ 14.png);
     width: 100%;
+    
     background-repeat: no-repeat;
   }
+
+  .baner-con h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0B0223;
+
+  }
+ .iconperaadj{
+  display: flex;
+  justify-content:flex-start;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+
+ }
+
+ .signin{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+padding: 21px 40px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 48px;
+border: 0;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+ }
+ .gorough{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+padding: 21px 40px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 48px;
+border: 0;
+background: #4EC5F7;
+ }
+
+  .baner-con h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #0B0223;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+  }
+
+
+
+
   .baner-con{
 
     margin-left: 240px;
@@ -201,7 +258,7 @@ button:hover{
 
 footer{
   background-color: #0B0223;
-  color: #FFF;
+  color:#FFF;
   display: block;
   text-align: center;
   align-items: center;
@@ -241,6 +298,17 @@ footer{
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+
+.fotter-icon{
+  display: flex;
+  justify-content: center;
+}
+
+.playgames, .copyright{
+  color: #686666;
+  font-weight: 700;
 }
 /*playgames*/
 
@@ -339,6 +407,11 @@ footer{
         padding-right: 25px;
       }
 
+      .fotter-icon{
+        flex-direction: column;
+      }
+  
+
       .mainbanner{
         flex-direction: column-reverse;
         
@@ -353,6 +426,7 @@ footer{
     .banner{
       background-image: url(images/Group\ 14.png);
       width: 100%;
+      height:auto;
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
@@ -369,7 +443,48 @@ footer{
     }
       
       
+    .baner-con h2{
+      font-size: 1.2rem;
+      
+  
+    }
+   .iconperaadj{
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 20px;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+  
+   }
+  
+   .signin{
+    height: 30px;
+    width: 140px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.7rem;
+    align-items:center;
+    
+  }
+   .gorough{
 
+
+    height: 30px;
+    width: 140px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.7rem;
+    align-items:center;
+    
+   }
+  
+    .baner-con h1{
+      font-size: 2rem;
+    }
+  
+  
          
 }
 
@@ -416,7 +531,7 @@ footer{
     .banner-image img{
      
       max-width:450px;
-      padding-left: 200px;
+      padding-left: 180px;
       
     }
     .banner{
@@ -431,6 +546,49 @@ footer{
       margin: 20px 0px;
       padding: 0px;
       text-align: center;
+    }
+
+   
+
+    .baner-con h2{
+      font-size: 1.5rem;
+      
+  
+    }
+   .iconperaadj{
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 280px;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+  
+   }
+  
+   .signin{
+    height: 30px;
+    width: 140px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.7rem;
+    align-items:center;
+    
+  }
+   .gorough{
+
+
+    height: 30px;
+    width: 140px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.7rem;
+    align-items:center;
+    
+   }
+  
+    .baner-con h1{
+      font-size: 2rem;
     }
    
       
@@ -496,8 +654,51 @@ footer{
   padding: 0px;
   text-align: center;
 }
+
+ .baner-con h2{
+      font-size: 1.5rem;
+      
+  
+    }
+   .iconperaadj{
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 280px;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+  
+   }
+  
+   .signin{
+    height: 30px;
+    width: 140px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.7rem;
+    align-items:center;
+    
+  }
+   .gorough{
+
+
+    height: 30px;
+    width: 140px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.7rem;
+    align-items:center;
+    
+   }
+  
+    .baner-con h1{
+      font-size: 2rem;
+    }
   
 }
+
+
 
 
 /* low device*/
