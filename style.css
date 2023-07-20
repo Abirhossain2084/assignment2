@@ -23,6 +23,7 @@ header{
 .logo{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .game{
     color:#FF42A5 ;
@@ -70,6 +71,7 @@ nav {
       display: flex;
       justify-content: space-between;
   }
+
   .banner{
     background-image: url(images/Group\ 14.png);
     width: 100%;
@@ -153,6 +155,13 @@ nav {
     
     margin-right: 240px;
     overflow: visible;
+
+
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    
   }
  
 
@@ -580,7 +589,13 @@ footer{
     }
     .banner-image{
   
-      margin-right: 240px;
+      
+      height: 300px;
+    }
+    .banner-image img{
+  
+      width: 300px;
+      padding: 30px;
     }
       
       
@@ -598,6 +613,10 @@ footer{
     gap: 5px;
     font-size: 0.8rem;
   
+   }
+   .icon-pra{
+    display: grid;
+    justify-content: center;
    }
   
    .signin{
@@ -692,7 +711,7 @@ footer{
 
 /*responsve Tab*/
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
   
     header{
         padding: 50px 100px;  
@@ -858,15 +877,21 @@ footer{
 @media screen and (min-width:1024px) and (max-width:1440px){
 
   header{
-    padding: 50 100px;  
-    flex-direction: column;  
- }
- nav {
-    margin-left: 0px;
-  }
-  nav ul {
-    flex-direction: column;
-  }
+   
+    display: flex;
+    justify-content: space-between;
+   
+    text-align: center;
+    padding: 50px 100px;
+
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 
 .funny-vedio{
@@ -890,72 +915,158 @@ footer{
 
 
 
-.mainbanner{
-  flex-direction: column-reverse;
-  
-}
-
-
-.banner-image img{
- 
-  max-width:650px;
-  padding-left: 200px;
-  
-}
-.banner{
-  background-image: url(images/Group\ 14.png);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-.baner-con{
-
-  margin: 20px 0px;
-  padding: 0px;
-  text-align: center;
-}
-
- .baner-con h2{
-      font-size: 1.5rem;
-      
-  
-    }
-   .iconperaadj{
-    display: flex;
-    justify-content:flex-start;
-    padding-left: 280px;
-    text-align: center;
-    align-items: center;
-    gap: 5px;
-    font-size: 0.8rem;
-  
-   }
-  
-   .signin{
-    height: 30px;
-    width: 140px;
-    color: #FFF;
-    font-weight: 600;
-    font-size: 0.7rem;
-    align-items:center;
-    
+    .mainbanner{
+      display: flex;
+      justify-content: space-between;
   }
-   .gorough{
-
-
-    height: 30px;
-    width: 140px;
-    color: #FFF;
-    font-weight: 600;
-    font-size: 0.7rem;
-    align-items:center;
+  .banner{
+    background-image: url(images/Group\ 14.png);
+    width: 100%;
     
-   }
-  
-    .baner-con h1{
-      font-size: 2rem;
-    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .baner-con h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0B0223;
+
+  }
+ .iconperaadj{
+  display: flex;
+  justify-content:flex-start;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+
+ }
+
+ .signin{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  border: 0;
+  background-color: #F948B2;
+}
+
+.signin:hover{
+  color: white;
+
+}
+
+
+ .gorough{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  border: 0;
+  background-color:#4EC5F7;
+ }
+
+ .gorough:hover{
+  color: white;
+ }
+
+
+  .baner-con h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0B0223;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+  }
+
+
+
+
+  .baner-con{
+
+    margin-left: 150px;
+    padding-top: 50px;
+  }
+  .banner-image{
+    
+    margin-right:150px;
+    overflow: visible;
+  }
+  .banner-image img{
+    
+    width: 400px;
+  }
+
+   /* Play instant styles */
+   .play-instant {
+    max-width: 600px;
+    height: auto;
+    flex-direction: column;
+}
+
+.play-instant-text {
+    width: 600px;
+    height: auto;
+    padding-right: 0;
+}
+
+.play-instant-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.play-instant-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.play-instant-img {
+    width: 600px;
+    height: 570px;
+    position: relative;
+}
+
+.play-instant-img-1 {
+    width: 450px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.play-instant-img-1 img {
+    width: 450px;
+    height: 480px;
+}
+
+.play-instant-img-2 {
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.play-instant-img-2 img {
+    width: 250px;
+    height: 280px;
+}   
   
 }
 
@@ -998,3 +1109,5 @@ footer{
 
 
 }
+
+
